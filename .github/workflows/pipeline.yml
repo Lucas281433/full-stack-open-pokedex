@@ -50,6 +50,7 @@ jobs:
           description: to ${{ secrets.RENDER_DEPLOY_URL }} by ${{ github.actor }}
           footer: 'Severity: Informational'
           webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+      
       - name: Notify Discord Failure
         if: ${{ failure() }}
         uses: rjstone/discord-webhook-notify@v1
