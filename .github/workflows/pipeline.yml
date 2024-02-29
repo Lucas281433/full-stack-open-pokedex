@@ -65,7 +65,6 @@ jobs:
         with:
           severity: info
           username: GitHub
-          avatarUrl: https://github.githubassets.com/images/modules/logos_page/Octocat.png
           text: A new version of Pokedex deployed
           description: to ${{ secrets.RENDER_DEPLOY_URL }} by ${{ github.actor }}
           footer: 'Severity: Informational'
@@ -76,7 +75,6 @@ jobs:
         with:
           severity: error
           username: GitHub
-          avatarUrl: https://github.githubassets.com/images/modules/logos_page/Octocat.png
           text: Build failed
           description: commit ${{ github.server_url }}/${{ github.repository }}/commit/${{ github.run_id }} by ${{ github.actor }} broke the build :(
           footer: 'Severity: Error'
